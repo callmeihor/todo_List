@@ -39,7 +39,6 @@ li {
   line-height: 40px;
   color: white;
 }
-/*---------------------------------------------------------------this one*/
 li:nth-child(2n){
   background-color: #434F4E;  /*E8F2F4*/
 }
@@ -56,10 +55,10 @@ margin: 0 auto;
 .completed {
   color: gray;
   text-decoration: line-through;
-  background-color: #202120;
+  background-color: #202120 !important;
 }
 .completed:hover {
-  background-color: #1D1F1E;
+  background-color: #151716 !important;
 }
 .fa-plus {
   float: right;
