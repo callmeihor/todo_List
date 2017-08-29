@@ -57,6 +57,11 @@ margin: 0 auto;
   text-decoration: line-through;
   background-color: #202120 !important;
 }
+.completed:nth-child(2n) {
+  color: gray;
+  text-decoration: line-through;
+  background-color: #272827 !important;
+}
 .completed:hover {
   background-color: #151716 !important;
 }
