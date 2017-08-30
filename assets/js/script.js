@@ -109,6 +109,11 @@ $("ul").on("click", ".fa-star",  function (event) {
   event.stopPropagation();
 });
 
+$(".fa-plus").on("click",  function (event) { //add "event" to ()
+  $(this).toggleClass("plus");
+  event.stopPropagation();
+});
+
 $("ul").on("click", "span", function (event) {
   $(this).parent().fadeOut(function () {
     $(this).remove();
