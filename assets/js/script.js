@@ -100,24 +100,27 @@ document.body.addEventListener("touchstart", onMouseDown);
 document.body.addEventListener("touchend", onMouseUp);
 requestAnimationFrame(render);
 
-//----------------------------------------------------------------------------------todo list
-
 $("ul").on("click", "li", function () {
   $(this).toggleClass("completed");
+});
+
+$("ul").on("click", ".fa-star",  function (event) {
+  $(this).toggleClass("star");
+  event.stopPropagation();
 });
 
 $("ul").on("click", "span", function (event) {
   $(this).parent().fadeOut(function () {
     $(this).remove();
   });
-  event.stopPropagation(); //only for click to "span", instead to all (parent ul,container, body)
+  event.stopPropagation();
 })
 
 $("input[type='text']").keypress(function (event) {
-  if(event.which === 13) {   //13 is enter key
-    var todoText = $(this).val(); //new text from input
+  if(event.which === 13) { 
+    var todoText = $(this).val();
     $(this).val("");
-    $("ul").append("<li><span><i class='fa fa-times' aria-hidden='true'></i></span>" + todoText + "</li>");
+    $("ul").append("<li><span><i class='fa fa-times' aria-hidden='true'></i></span>" + todoText + "<i class='fa fa-star' aria-hidden='true'></i>" + "</li>");
   }
 })
 
