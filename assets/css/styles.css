@@ -64,6 +64,12 @@ margin: 0 auto;
 .fa-plus {
   float: right;  
 }
+.fa-plus:hover {
+  color: #95a5a6;
+}
+.plus {
+  color: #bdc3c7;
+}
 .completed {
   color: gray;
   text-decoration: line-through;
