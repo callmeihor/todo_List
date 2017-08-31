@@ -13,8 +13,8 @@ h1{
   font-weight: normal;
 }
 h2{
-  position: absolute;
-  bottom: 10px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   text-align: center;
   color: white;
